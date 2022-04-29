@@ -1,0 +1,191 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4{
+    color: #315061;
+    font-weight: lighter;
+}
+body{
+    background-color: #EFF6FF;
+    padding: 50px;
+    font-family: "Barlow", "Arial", sans-serif;
+}
+
+.content{
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.left{
+    flex: 1;
+    background-image: url("image/bg.jpg");
+    width: 50%;
+    background-size: cover;
+    padding: 40px 0 0 40px;
+}
+
+.right{
+    flex: 1;
+    background: white;
+    padding: 60px 0 0 60px;
+}
+
+.left img{
+    height: 25px;
+}
+
+.facebook{
+    background-color: #255A9B;
+    background-image: url("image/facebook.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px center;
+    color: #EFF6FF;
+    border: none;
+    width: 250px;
+    height: 50px;
+    padding: 17px 45px;
+    font-size: 14px;
+}
+
+.facebook:hover{
+    background-color: royalblue;
+}
+.linkedln{
+    background-color: #0076B6;
+    background-image: url("image/linkedin.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 10px center;
+    color: #EFF6FF;
+    border: none;
+    width: 250px;
+    height: 50px;
+    padding: 17px 45px;
+    font-size: 14px;
+}
+
+.linkedln:hover{
+    background-color: royalblue;
+}
+
+.bef-aft{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bef-aft span {
+    position: relative;
+    font-size: 10px;
+}
+
+.block::before{
+    display: block;
+    width: 100px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #000;
+    top: 50%;
+    right: 30px;
+    opacity: 15%;
+}
+
+.block::after{
+    display: block;
+    width: 100px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #000;
+    top: 50%;
+    left: 30px;
+    opacity: 15%;
+}
+.group{
+    text-align: left;
+    display: inline-block;
+    border: 1px solid lightgray;
+    width: 250px;
+    justify-content: space-around
+}
+
+.group label{
+    position: absolute;
+    padding: 5px 0 0 10px;
+    color: #96a3ac;
+    font-size: 12px;
+}
+
+.group input{
+    border: none;
+    width: 100%;
+    line-height: 1.5rem;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+.group input:focus {
+    outline: none;
+    border-left: 1px solid #3698FB;
+}
+
+input:focus {
+    outline: none;
+}
+
+.block-group{
+    text-align: center;
+    margin: 55px;
+}
+
+
+.radio-block{
+    display: flex;
+    text-align: center;
+}
+
+.radio-group{
+    padding-right: 85px;
+}
+
+.note{
+    border: 1px solid whitesmoke;
+    font-size: 15px;
+    color: lightgray;
+    width: 290px;
+    padding: 0 10px 0 10px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.create{
+    margin-top: 45px;
+    margin-bottom: 80px;
+}
+.create button{
+    background-color: #3698FB;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 60px;
+    color: #EFF6FF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.create button:hover{
+    background-color: #255A9B;
+    border-radius: 5px;
+}
+.text{
+    margin-top: 65px;
+    margin-bottom: 65px;
+    text-align: left;
+}
+
+.checkbox-group label{
+    color: #96a3ac;
+}
